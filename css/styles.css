@@ -1,0 +1,161 @@
+/*
+WEBSTER BRAND COLOR PALETTE (2026 Guidelines)
+Webster Blue: #024890
+Webster Gold: #F5B706
+Dark Blue (Accent): #181B3E
+Silver (Neutral): #D3D5D7
+Off-white: #F6F6F6
+*/
+
+/* GLOBAL STYLES 
+------------------------------------*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* sets default to 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    background: #F6F6F6; 
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif; /* Approved Digital Substitute for Sabon */
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* TYPOGRAPHY */
+h1, h2, h3, h4 {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; /* Approved Digital Substitute for Franklin Gothic */
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    color: #181B3E;
+}
+h1 {
+    font-size: 4.8rem;
+    line-height: 1.1;
+    color: #024890;
+}
+h2 {
+    font-size: 3.2rem;
+    border-bottom: 3px solid #F5B706;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+
+/* LINKS */
+a {
+    color: #024890;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #F5B706;
+    text-decoration: none;
+}
+
+/* BUTTONS */
+.btn {
+    background: #024890;
+    color: #FFF !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: inline-block;
+    padding: 12px 24px;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    border-radius: 2px;
+    transition: background 0.3s ease;
+}
+.btn:hover {
+    background: #181B3E;
+}
+
+/* NAVIGATION */
+nav {
+    background: #024890;
+    padding: 1rem 0;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+nav a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding: 0.5rem 1rem;
+}
+nav a:hover {
+    color: #F5B706;
+}
+nav a.current-page {
+    border-bottom: 3px solid #F5B706;
+    color: #F5B706;
+}
+
+/* LAYOUT */
+.content-wrapper {
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    max-width: 1000px;
+}
+.content-bg {
+    background: #FFF;
+    padding: 4rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* HEADER & LOGO */
+header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.brand-logo {
+    max-width: 250px;
+    margin-bottom: 2rem;
+}
+
+/* FOOTER */
+footer {
+    background: #181B3E;
+    color: #D3D5D7;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+footer a {
+    color: #F5B706;
+}
+
+/* BLOG SECTION */
+.blog-post {
+    margin-bottom: 4rem;
+}
+.blog-meta {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    h1 { font-size: 3.6rem; }
+    h2 { font-size: 2.8rem; }
+    .content-bg { padding: 2rem; }
+    nav ul { gap: 1.5rem; }
+}
