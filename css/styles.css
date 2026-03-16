@@ -97,8 +97,10 @@ nav {
     align-items: center;
 }
 .nav-logo {
-    height: 40px;
+    height: auto;
+    max-height: 45px;
     width: auto;
+    display: block;
 }
 nav ul {
     list-style: none;
